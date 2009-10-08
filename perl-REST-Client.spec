@@ -6,14 +6,15 @@
 %define	pdir	REST
 %define	pnam	Client
 Summary:	REST::Client - A simple client for interacting with RESTful http/https resources
+Summary(pl.UTF-8):	REST::Client - prosty klient do interakcji z zasobami RESTful http/https
 Name:		perl-REST-Client
-Version:	62
-Release:	0.1
+Version:	118
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-authors/id/M/MC/MCRAWFOR/REST-Client-62.tar.gz
-# Source0-md5:	335f37bdf834b69bb5b5474b5cd54fc8
+Source0:	http://www.cpan.org/modules/by-authors/id/M/MC/MCRAWFOR/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	29afe02352c28301a2bc1561245a2ac4
 URL:		http://search.cpan.org/dist/REST-Client/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -21,10 +22,14 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-REST::Client provides a simple way to interact with HTTP RESTful resources.
+REST::Client provides a simple way to interact with HTTP RESTful
+resources.
 
+%description(pl.UTF-8)
+REST::Client dostarcza prosty sposów na interakcję z zasobami HTTP
+RESTful.
 %prep
-%setup -q -n Rest%{pnam}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 %{__perl} Makefile.PL \

@@ -9,7 +9,7 @@ Summary:	REST::Client - A simple client for interacting with RESTful http/https 
 Summary(pl.UTF-8):	REST::Client - prosty klient do interakcji z zasobami RESTful http/https
 Name:		perl-REST-Client
 Version:	118
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -50,5 +50,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc CHANGES
+%dir %{perl_vendorlib}/REST
 %{perl_vendorlib}/REST/*.pm
 %{_mandir}/man3/*

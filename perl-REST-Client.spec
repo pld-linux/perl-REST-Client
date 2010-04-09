@@ -8,13 +8,13 @@
 Summary:	REST::Client - A simple client for interacting with RESTful http/https resources
 Summary(pl.UTF-8):	REST::Client - prosty klient do interakcji z zasobami RESTful http/https
 Name:		perl-REST-Client
-Version:	134
+Version:	150
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/M/MC/MCRAWFOR/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	8fc01b3bd1b0c05a1f4e3eb92568c244
+# Source0-md5:	143ca1bff9b53bd9b888455328e41eb2
 URL:		http://search.cpan.org/dist/REST-Client/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13

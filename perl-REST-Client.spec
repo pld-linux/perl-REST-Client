@@ -1,15 +1,15 @@
 #
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
-#
+
+%define		pdir	REST
+%define		pnam	Client
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	REST
-%define	pnam	Client
 Summary:	REST::Client - A simple client for interacting with RESTful http/https resources
 Summary(pl.UTF-8):	REST::Client - prosty klient do interakcji z zasobami RESTful http/https
 Name:		perl-REST-Client
 Version:	150
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -25,9 +25,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 REST::Client provides a simple way to interact with HTTP RESTful
 resources.
 
-%description(pl.UTF-8)
+%description -l pl.UTF-8
 REST::Client dostarcza prosty sposów na interakcję z zasobami HTTP
 RESTful.
+
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
 

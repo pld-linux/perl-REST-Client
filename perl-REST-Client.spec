@@ -4,7 +4,6 @@
 
 %define		pdir	REST
 %define		pnam	Client
-%include	/usr/lib/rpm/macros.perl
 Summary:	REST::Client - A simple client for interacting with RESTful http/https resources
 Summary(pl.UTF-8):	REST::Client - prosty klient do interakcji z zasobami RESTful http/https
 Name:		perl-REST-Client
